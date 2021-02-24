@@ -1,5 +1,6 @@
 import { makeStyles, fade } from '@material-ui/core/styles';
 
+
 const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
@@ -16,6 +17,14 @@ export default makeStyles((theme) => ({
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',
+  },
+  title2: {
+    padding:5,
+    display: 'flex',
+    textDecoration: 'none',
+    color:"rgb(151,151,151)",
+    fontWeight:"bold",
+    
   },
   image: {
     marginRight: '10px',

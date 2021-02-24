@@ -13,7 +13,7 @@ import {
 
 import useStyles from "./styles";
 import { commerce } from "../../../librairie/commerce";
-import {Link , useHistory} from "react-router-dom"
+import {Link , useHistory} from "react-router-dom";
 import AddressForm from "../AddressForm";
 import PaymentForm from "../PaymentForm";
 import { typography } from "material-ui/styles";

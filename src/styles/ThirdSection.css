@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400;1,700&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    -webkit-font-smoothing: antialiased;
+    /* -moz-osx-font-smoothing: grayscale; */
+  }
+  .mongoTitre3 {
+    color:#F4A261;
+  }
+  .mongoTitleThird {
+    width: "50%";
+    justify-content: center;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family:Roboto,sans-serif;
+    
+  }
+  .quotestwo {
+    width: "100%";
+    font-family:Roboto,sans-serif;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .quotestwo .boxOne {
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+    width: 25vw;
+    height: 25vh;
+    min-height: 120px;
+    background: #f2f2f2;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  .quotestwo .boxOne::before {
+    content: '\201C';
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+  }
+  
+  .quotestwo .boxOne::after {
+    content: '\201D';
+    position: absolute;
+    /* bottom: -10%; */
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
+  }
+  
+  .quotestwo .boxOne p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family:Roboto,sans-serif;
+  }
+  
+  .quotestwo .boxOne h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+  }
+  
+  .quotestwo .boxOne:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+  
+  .quotestwo .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+  }
+  
+  .quotestwo .boxOne.boxBox1,
+  .quotestwo .boxOne.boxBox1.bg {
+    opacity: 1;
+    background: #F4A261;
+  background: -moz-linear-gradient(-45deg, #E9C46A 15%, #E76F51 100%);
+  background: -webkit-linear-gradient(-45deg, #E9C46A 45%,#E76F51 40%);
+  background: linear-gradient(135deg, #E9C46A 50%,#2A9D8F 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2A9D8F', endColorstr='#2A9D8F',GradientType=1 );
+  }
+  
+  .quotestwo .boxOne.boxBox2,
+  .quotestwo .boxOne.boxBox2~.bg {
+    opacity: 1;
+    background: #F4A261;
+  background: -moz-linear-gradient(-45deg, #E9C46A 15%, #E9C46A 100%);
+  background: -webkit-linear-gradient(-45deg, #E9C46A 45%,#E76F51 40%);
+  background: linear-gradient(135deg, #E9C46A 50%,#2A9D8F 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+  }
+  
+  .quotestwo .boxOne.boxBox3,
+  .quotestwo .boxOne.boxBox3~.bg {
+    opacity: 1;
+    background: #F4A261;
+  background: -moz-linear-gradient(-45deg, #F4A261 15%, #F4A261 100%);
+  background: -webkit-linear-gradient(-45deg, #E9C46A 45%,#E76F51 40%);
+  background: linear-gradient(135deg, #E9C46A 50%,#2A9D8F 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F4A261', endColorstr='#da5de2',GradientType=1 );
+  }
+  .sectioncard{
+    padding: 10px;
+    margin-top: 65px;
+    margin-bottom: 10px;
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .sectionCardTitle {
+    font-family: Roboto, sans-serif;
+    margin-top: 70px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+
+  }
+  .CardTitleh2{
+    font-size: 32px;
+    font-family:Roboto, sans-serif;
+    color: #2A9D8F;
+  }
+
+  .CardTitleText {
+    font-size: 20px;
+    color: #F4A261;
+    font-family:Roboto, sans-serif;
+
+  }

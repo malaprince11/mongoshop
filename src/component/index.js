@@ -1,5 +1,11 @@
 export { default as Navbar} from './NavBar/Navbar';
 export { default as Products} from './Products/Products';
+export { default as Contact} from './contact/Contact';
 export { default as Cart} from './Cart/Cart';
 export { default as Checkout} from './CheckoutForm/Checkout/Checkout.jsx';
 export { default as HomeArticle} from './article/HomeArticle'; 
+export { default as SecondArticle} from './article/SecondArticle'; 
+export { default as ThirdArticle} from './article/ThirdArticle'; 
+export { default as CardArticle} from './article/CardArticle'; 
+export { default as Spacer} from './spacer/Spacer'; 
+export { default as Footer} from './footer/Footer'; 

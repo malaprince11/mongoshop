@@ -5,10 +5,24 @@ import Carousel from './component/carousel/Carousel';
 import { CarouselData } from './component/carousel/CarouselData';
 // import  { CarouselStyle} from './component/carousel/CarouselStyle';
 
-import { Products, Navbar, Cart, Checkout, HomeArticle } from "./component";
+import { Products,
+   Navbar,
+  Cart,
+  Checkout,
+  HomeArticle,
+  Spacer,
+  SecondArticle,
+  ThirdArticle,
+  CardArticle,
+  Contact,
+  Footer,} from "./component";
 
 import "./styles/App.css";
 import "./styles/homeTitle.css";
+import "./styles/spacer.css";
+import "./styles/secondSection.css";
+import "./styles/ThirdSection.css";
+import "./styles/Contact.css";
 
 
 function App() {
@@ -79,10 +93,25 @@ function App() {
         <Switch>
           <Route exact path="/">
           <Carousel slides={CarouselData} />
+          <Spacer />
           <HomeArticle />
-            <Products products={products} addToCard={handleCard} />
+          <ThirdArticle />
+            {/* <Products products={products} addToCard={handleCard} /> */}
+            <CardArticle/>
+            <Spacer />
+            <SecondArticle />
+            <Spacer />
+            <Spacer />
+          <Footer />
           </Route>
-
+          <Route exact path="/product">
+          <Products products={products} addToCard={handleCard} />
+          <Footer /> 
+          </Route>
+          <Route exact path="/Contact">
+            <Contact />
+            <Spacer />
+          </Route>
           <Route exact path="/cart">
             <Cart
               cart={cart}

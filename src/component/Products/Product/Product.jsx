@@ -14,7 +14,7 @@ import useStyles from "./styles";
 const Product = ({ product, addToCard }) => {
   const classes = useStyles();
 
-  // console.log(product);
+
 
   return (
     <Card className={classes.root}>
